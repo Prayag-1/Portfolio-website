@@ -1,0 +1,245 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #80e27e;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 250px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+}
+
+/* Home Section */
+.home-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.links a:hover {
+    background-color: #4CAF50;
+}
+
+/* Project Section */
+.project-card {
+    background-color: #1e1e1e;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover {
+    background-color: #333;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.project-card a {
+    color: #4CAF50;
+}
+
+/* Research Section */
+section#research {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+section#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact input, section#contact textarea {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+section#contact button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#contact button:hover {
+    background-color: #80e27e;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+}
+section#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#contact input, section#contact textarea {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #2b2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+section#contact button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#contact button:hover {
+    background-color: #80e27e;
+}
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff; /* White label text */
+}
+
+form input[type="email"],
+form textarea {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444; /* Dark input fields */
+    color: #fff; /* White text in input */
+}
+
+form input[type="email"]::placeholder,
+form textarea::placeholder {
+    color: #bbb; /* Lighter placeholder text */
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Centering the form title */
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
