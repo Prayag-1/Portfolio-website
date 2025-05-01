@@ -4,10 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayag's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li a {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .home-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #4CAF50;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            background-color: #333;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .project-card a {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        #research, #contact form {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #2b2b2b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #80e27e;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
@@ -20,33 +166,26 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
     <section id="home" class="section">
         <div class="home-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I'm Prayag, an IT student specializing in web and software development.</p>
-            <!-- Insert your professional photo here -->
-            <a href="https://imgbb.com/" target="_blank">
-                <img src="https://i.ibb.co/7jLkxJR/Screenshot-2024-09-29-150340.png" alt="Screenshot of your portfolio">
-            </a>
-            
+            <img src="https://i.ibb.co/7jLkxJR/Screenshot-2024-09-29-150340.png" alt="Portfolio screenshot">
             <div class="links">
                 <a href="https://www.linkedin.com/in/prayag-nepal" target="_blank">LinkedIn</a>
-                <a href="https://portfolioweb.tiiny.site/" target="_blank">Portfolio</a>
+                <a href="https://portfolioweb.tiiny.site/" target="_blank">Website</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a student at Herald College Kathmandu, currently pursuing a Bachelor's in IT. I have experience in graphic design, social media management, web development, and software engineering.</p>
+        <p>I am a student at Herald College Kathmandu pursuing a Bachelor's in IT. I have experience in graphic design, social media management, web development, and software engineering.</p>
         <p><strong>Skills:</strong> Java, HTML, CSS, JavaScript, PHP, Python, C#, Unity</p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2>My Projects</h2>
         <div class="project-card">
             <h3>Weather App</h3>
             <p>A weather forecasting app built using JavaScript and PHP.</p>
@@ -54,40 +193,44 @@
         </div>
         <div class="project-card">
             <h3>Banking Software</h3>
-            <p>Banking software developed in Java for managing transactions.I cannot upload whole source code for this project contact me below for more inquiries</p>
-            <a href="https://ibb.co/q7HsGzx" target="_blank">View Project</a>
-
+            <p>Java-based banking system to manage user transactions. Contact me for source code access.</p>
+            <a href="https://ibb.co/q7HsGzx" target="_blank">View Screenshot</a>
+        </div>
+        <div class="project-card">
+            <h3>Other Projects</h3>
+            <p>Click the link below to explore more of my project work:</p>
+            <a href="https://portfolioweb.tiiny.site/" target="_blank">View All Projects</a>
         </div>
     </section>
 
-    <!-- Research Section -->
     <section id="research" class="section">
-        <h2>Research Paper & 3d game made from UNITY</h2>
+        <h2>Research & Game Development</h2>
         <p><strong>Title:</strong> Effects of Video Games on Behavior</p>
-        <p> 3D game made using UNITY and A detailed study on how video games impact behavior across different age groups(reserch paper is not upladed onliine due to saftey reasons)</p>
-        <a href="research-paper.pdf" target="_blank">Download Gamepaly</a>
+        <p>3D Game made using Unity and a research paper on how games impact behavior across age groups. (Research paper is not uploaded for safety reasons.)</p>
+        <a href="research-paper.pdf" target="_blank">Download Gameplay</a>
     </section>
 
-    <!-- Contact Section -->
-  <!-- Contact Section -->
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/xyzgrnvg" method="POST">
-        <label for="email">Your email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-        <label for="message">Your message:</label>
-        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xyzgrnvg" method="POST">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2024 Prayag Nepal. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Portfolio site loaded successfully!");
+        });
+    </script>
 </body>
 </html>
